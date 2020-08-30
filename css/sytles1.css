@@ -1,0 +1,129 @@
+
+.vtd {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 675px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vtv {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: baseline;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-width: 100%;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#v1 {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    box-sizing: border-box;
+    border: 0;
+    vertical-align: middle;
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: block;
+}
+
+.sector_item {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    line-height: 1.428571429;
+    color: #333333;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.itemrow {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    width: 1200px;
+}
+
+.item {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    box-sizing: border-box;
+    margin: 0px 15px 30px;
+    width: calc(33.33333% - 31px);
+}
+
+.gditem {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(97, 108, 121, .1), 0 7px 18px 0 rgba(97, 108, 121, .13);
+    transition: box-shadow .2s ease;
+}
+
+.gditemmodel {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    background-image: url(https://virtualtouch.tech/themes/rainlab-bonjour/assets/images/4.jpg);
+    height: 214.875px;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "avalonregular", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+}
+

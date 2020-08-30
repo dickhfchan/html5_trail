@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/sytles1.css">
+</head>
+    <body>
+        <div class="vtd" style="display: flex; justify-content: center; align-items: center;">
+            <div id="video" style="position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; background-color: rgba(0,0,0,.15);">
+            </div>   
+                    <video id="vtv" class="vtv" src="https://virtualtouch.tech/themes/rainlab-bonjour/assets/video/Windows_allsaints.mp4" autoplay="" loop="" muted="" playsinline=""></video>
+            
+            <img id="v1" style="height: 36px; width: 36px; position: absolute; bottom: 0px; right: 0px; display: block;" onclick="v1()" src="https://virtualtouch.tech/themes/rainlab-bonjour/assets/video/2.png">
+            <img id="v2" style="height: 36px; width: 36px; position: absolute; bottom: 0px; right: 0px; display: none;" onclick="v2()" src="https://virtualtouch.tech/themes/rainlab-bonjour/assets/video/1.png">
+        </div>
+        <div style="display: grid; justify-content: center;">
+            <div class="sector_item" style="font-size: 25px; font-weight: bolder; margin-top: 10px; margin-bottom: 10px;">RELATED VIRTUAL GARMENTS
+            </div>
+            <div id="itembox" class="itemrow" style="width: 1200px;">
+                <div class="item">
+                    <div class="gditem">
+                        <img id="outfit5-dress" class="gditemmodel" src="/images/RM4I032T1 thumb.png" style="height: 214.875px;">
+                        <!-- <model-viewer id="outfit5-dress" camera-controls="" interaction-prompt="none" class="gditemmodel" src="/storage/app/media/RM4I032T1.glb" style="height: 214.875px;"></model-viewer> -->
+                        <div class="gditemtitle">
+                            <a data-fancybox="" data-type="iframe" href="javascript:;" data-src="/clothdetail/outfit5-dress/1">
+                            outfit5 dress
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="gditem">
+                        <img id="outfit5-dress" class="gditemmodel" src="/images/outfit3 black coat thumb.png" style="height: 214.875px;">
+                        <!-- <model-viewer id="outfit3-black-coat" camera-controls="" interaction-prompt="none" class="gditemmodel" src="/storage/app/media/outfit3 black coat 1.glb" style="height: 214.875px;"></model-viewer> -->
+                        <div class="gditemtitle">
+                            <a data-fancybox="" data-type="iframe" href="javascript:;" data-src="/clothdetail/outfit3-black-coat/1">
+                                outfit3 black coat
+                            </a>
+                        </div>
+                    </div>
+                </div>        
+                <div class="item">
+                    <div class="gditem">
+                        <img id="outfit5-dress" class="gditemmodel" src="/images/outfit6 Long dress 2.png" style="height: 214.875px;">
+                        <!-- <model-viewer id="outfit-6-long-dress" camera-controls="" interaction-prompt="none" class="gditemmodel" src="/storage/app/media/outfit6 Long dress2.glb" style="height: 214.875px;"></model-viewer> -->
+                        <div class="gditemtitle">
+                            <a data-fancybox="" data-type="iframe" href="javascript:;" data-src="/clothdetail/outfit-6-long-dress/1">
+                                outfit6 long dress
+                            </a>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <script>
+            document.getElementById("v1").onclick = function () {
+                document.getElementById("vtv").muted = 0;
+                document.getElementById("v1").style.display = "none";
+                document.getElementById("v2").style.display = "block";
+            };
+            document.getElementById("v2").onclick = function () {
+                document.getElementById("vtv").muted = 1;
+                document.getElementById("v1").style.display = "block";
+                document.getElementById("v2").style.display = "none";
+            };
+            // 设置大小推荐衣服框的
+            var video = document.getElementById("video");
+            var itembox = document.getElementById("itembox");
+            itembox.style.width = video.offsetWidth + "px";
+        
+            // pop窗口
+            $('[data-fancybox]').fancybox({
+                toolbar: false,
+                smallBtn: true,
+                iframe: {
+                    preload: false,
+                    css: {
+        
+                    },
+                }
+            })
+        </script>
+    </body>
+</html>
